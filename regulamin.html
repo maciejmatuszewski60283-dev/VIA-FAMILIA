@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Regulamin & Polityka Prywatności — VIA Familia</title>
+  
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@600;700&family=Orbitron:wght@600;800;900&family=Plus+Jakarta+Sans:wght@400;600;700;800&display=swap" rel="stylesheet">
+  
+  <!-- Style CSS -->
+  <link rel="stylesheet" href="style.css">
+  
+  <!-- Biblioteki CDN -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+</head>
+<body>
+
+  <!-- Three.js Canvas Tło 3D -->
+  <canvas id="webgl-canvas"></canvas>
+
+  <!-- Pasek Nawigacji -->
+  <nav class="navbar">
+    <div class="nav-container">
+      <a href="index.html" class="nav-brand">
+        <img src="logo2.png" alt="VIA Familia Logo" class="brand-img-logo">
+        <span class="brand-text">VIA <span class="neon-pink">FAMILIA</span></span>
+      </a>
+
+      <div class="nav-actions">
+        <a href="index.html#rekrutacja" class="btn-neon btn-small">Dołącz do grupy</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Nagłówek Regulaminu -->
+  <header class="legal-hero">
+    <div class="container">
+      <div class="badge-neon">OFICJALNY DOKUMENT SPOŁECZNOŚCI</div>
+      <h1 class="section-title">Regulamin & <span class="gradient-text">Struktura</span></h1>
+      <p class="hero-subtitle">Kliknij na dowolną sekcję, aby rozwinąć jej szczegółowe zasady.</p>
+    </div>
+  </header>
+
+  <!-- Główna Sekcja Akordeonu z Regulaminem -->
+  <main class="container accordion-container">
+    
+    <!-- I. O VIA FAMILIA -->
+    <div class="accordion-item glass-card">
+      <button class="accordion-header">
+        <span class="acc-title"><span class="acc-num">I.</span> 🖤 O VIA FAMILIA</span>
+        <span class="acc-icon">+</span>
+      </button>
+      <div class="accordion-content">
+        <div class="accordion-body">
+          <p>VIA FAMILIA to społeczność stworzona z myślą o osobach aktywnych, lojalnych i chcących wspólnie rozwijać grupę[span_4](start_span)[span_4](end_span).</p>
+          <p><strong>Najważniejsze wartości VIA FAMILIA to[span_5](start_span)[span_5](end_span):</strong></p>
+          <ul>
+            <li>🤝 wzajemny szacunek[span_6](start_span)[span_6](end_span),</li>
+            <li>🔒 lojalność i zaufanie[span_7](start_span)[span_7](end_span),</li>
+            <li>⚡ aktywność[span_8](start_span)[span_8](end_span),</li>
+            <li>🫂 wsparcie innych członków[span_9](start_span)[span_9](end_span),</li>
+            <li>📈 rozwój społeczności[span_10](start_span)[span_10](end_span),</li>
+            <li>🛡️ bezpieczeństwo każdego członka[span_11](start_span)[span_11](end_span).</li>
+          </ul>
+          <p>Każda osoba należąca do VIA FAMILIA reprezentuje grupę również poza jej czatami i kanałami[span_12](start_span)[span_12](end_span). Dołączenie do społeczności oznacza zapoznanie się z regulaminem oraz zobowiązanie do jego przestrzegania[span_13](start_span)[span_13](end_span).</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- II. STRUKTURA -->
+    <div class="accordion-item glass-card">
+      <button class="accordion-header">
+        <span class="acc-title"><span class="acc-num">II.</span> 👑 STRUKTURA VIA FAMILIA</span>
+        <span class="acc-icon">+</span>
+      </button>
+      <div class="accordion-content">
+        <div class="accordion-body">
+          <p>VIA FAMILIA posiada określoną hierarchię[span_14](start_span)[span_14](end_span). Każda ranga ma swoje obowiązki i zakres odpowiedzialności[span_15](start_span)[span_15](end_span).</p>
+          
+          <h4 class="sub-role">👑 ZAŁOŻYCIELKA / LIDERKA</h4>
+          <p>Liderka jest najwyższą rangą w VIA FAMILIA i odpowiada za całokształt funkcjonowania społeczności[span_16](start_span)[span_16](end_span). Do jej zadań należy zarządzanie całą grupą, podejmowanie najważniejszych decyzji, nadzór nad rekrutacją, wybór administracji oraz ustalanie kierunku rozwoju grupy[span_17](start_span)[span_17](end_span). Posiada najwyższą rangę i prawo do ostatecznej decyzji[span_18](start_span)[span_18](end_span).</p>
+          
+          <h4 class="sub-role">🪽 V-LIDERKA</h4>
+          <p>Bezpośrednie wsparcie liderki, pełniące funkcję zarządzającą podczas jej nieobecności[span_19](start_span)[span_19](end_span). Nadzoruje administrację, kontroluje przestrzeganie regulaminu, pomaga przy rekrutacji i dba o działy[span_20](start_span)[span_20](end_span).</p>
+          
+          <h4 class="sub-role">🛡️ ADMINISTRACJA</h4>
+          <p>Odpowiada za codzienne funkcjonowanie grupy, reaguje na konflikty, pilnuje regulaminu, kontroluje aktywność i ma prawo udzielać ostrzeżeń[span_21](start_span)[span_21](end_span).</p>
+
+          <h4 class="sub-role">⚡ OPIEKUNOWIE DZIAŁÓW</h4>
+          <p>Pilnują porządku na swoim obszarze, pomagają członkom, dbają o aktywność i pomagają w realizacji projektów[span_22](start_span)[span_22](end_span).</p>
+
+          <h4 class="sub-role">👥 CZŁONKOWIE</h4>
+          <p>Zobowiązani są do przestrzegania zasad, zachowania szacunku, aktywności oraz dbania o dobre imię grupy[span_23](start_span)[span_23](end_span).</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- III. WARUNKI DOŁĄCZENIA -->
+    <div class="accordion-item glass-card">
+      <button class="accordion-header">
+        <span class="acc-title"><span class="acc-num">III.</span> 📋 WARUNKI DOŁĄCZENIA</span>
+        <span class="acc-icon">+</span>
+      </button>
+      <div class="accordion-content">
+        <div class="accordion-body">
+          <ol class="custom-num-list">
+            <li><strong>Minimalny wiek członka to 15 lat[span_24](start_span)[span_24](end_span).</strong></li>
+            <li>Podanie nieprawdziwego lub zatajenie rzeczywistego wieku może skutkować natychmiastowym usunięciem[span_25](start_span)[span_25](end_span).</li>
+            <li>Po dołączeniu wymagane jest umieszczenie oznaczenia <strong>„VIA”</strong> w nazwie użytkownika lub bio[span_26](start_span)[span_26](end_span).</li>
+            <li>W bio należy posiadać profil <strong>@via._familia</strong>[span_27](start_span)[span_27](end_span).</li>
+            <li>Członek zobowiązany jest do obserwowania profilu <strong>@via._familia</strong>[span_28](start_span)[span_28](end_span).</li>
+            <li>Każda osoba przed rozpoczęciem rekrutacji powinna zapoznać się z regulaminem[span_29](start_span)[span_29](end_span).</li>
+            <li>Samo wypełnienie formularza nie oznacza automatycznego przyjęcia do grupy[span_30](start_span)[span_30](end_span).</li>
+          </ol>
+        </div>
+      </div>
+    </div>
+
+    <!-- IV. OKRES PRÓBNY -->
+    <div class="accordion-item glass-card">
+      <button class="accordion-header">
+        <span class="acc-title"><span class="acc-num">IV.</span> ⏳ OKRES PRÓBNY</span>
+        <span class="acc-icon">+</span>
+      </button>
+      <div class="accordion-content">
+        <div class="accordion-body">
+          <p>Każda nowa osoba może zostać objęta <strong>3-dniowym okresem próbnym[span_31](start_span)[span_31](end_span)</strong>. Okres próbny służy sprawdzeniu współpracy i atmosfery[span_32](start_span)[span_32](end_span).</p>
+          <p>Podczas okresu próbnego obowiązuje cały regulamin, wymagana jest aktywność oraz kultura[span_33](start_span)[span_33](end_span). Liderka, V-Liderka lub administracja mogą zakończyć okres próbny wcześniej w przypadku łamania zasad[span_34](start_span)[span_34](end_span).</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- V. ZASADY SPOŁECZNOŚCI -->
+    <div class="accordion-item glass-card">
+      <button class="accordion-header">
+        <span class="acc-title"><span class="acc-num">V.</span> 📌 ZASADY SPOŁECZNOŚCI</span>
+        <span class="acc-icon">+</span>
+      </button>
+      <div class="accordion-content">
+        <div class="accordion-body">
+          <p><strong>W VIA FAMILIA bezwzględnie obowiązuje[span_35](start_span)[span_35](end_span):</strong></p>
+          <ul class="cross-list">
+            <li>Zakaz działania na szkodę grupy[span_36](start_span)[span_36](end_span).</li>
+            <li>Zakaz celowego wywoływania konfliktów i dram[span_37](start_span)[span_37](end_span).</li>
+            <li>Zakaz manipulowania członkami przeciwko sobie[span_38](start_span)[span_38](end_span).</li>
+            <li>Zakaz publicznego oczerniania VIA FAMILIA lub jej członków[span_39](start_span)[span_39](end_span).</li>
+            <li>Zakaz podszywania się pod administrację lub osoby funkcyjne[span_40](start_span)[span_40](end_span).</li>
+            <li>Zakaz samowolnego zmieniania nazwy grupy, motywu lub ustaleń administracji[span_41](start_span)[span_41](end_span).</li>
+            <li>Zakaz usuwania oznaczeń VIA bez zgody administracji[span_42](start_span)[span_42](end_span).</li>
+            <li>Zakaz nękania i cyberprzemocy[span_43](start_span)[span_43](end_span).</li>
+            <li>Zakaz wywierania presji psychicznej na innych członkach[span_44](start_span)[span_44](end_span).</li>
+            <li>Zakaz wykorzystywania prywatnych informacji przeciwko innym osobom[span_45](start_span)[span_45](end_span).</li>
+          </ul>
+          <p><em>Nieznajomość regulaminu nie jest usprawiedliwieniem jego łamania[span_46](start_span)[span_46](end_span).</em></p>
+        </div>
+      </div>
+    </div>
+
+    <!-- VI. ZASADY CZATÓW -->
+    <div class="accordion-item glass-card">
+      <button class="accordion-header">
+        <span class="acc-title"><span class="acc-num">VI.</span> 💬 ZASADY CZATÓW</span>
+        <span class="acc-icon">+</span>
+      </button>
+      <div class="accordion-content">
+        <div class="accordion-body">
+          <p>Czaty VIA FAMILIA to miejsce integracji i zabawy[span_47](start_span)[span_47](end_span). Zabrania się: celowego rozpoczynania dram, grupowego atakowania jednej osoby, poniżania członków oraz wyciągania prywatnych informacji[span_48](start_span)[span_48](end_span). Wszelkie narastające spory należy zgłaszać administracji zamiast prowadzić publiczne kłótnie[span_49](start_span)[span_49](end_span).</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- VII. GODZINY TYRKI -->
+    <div class="accordion-item glass-card">
+      <button class="accordion-header">
+        <span class="acc-title"><span class="acc-num">VII.</span> 🌙 GODZINY „TYRKI” (22:00 – 03:00)</span>
+        <span class="acc-icon">+</span>
+      </button>
+      <div class="accordion-content">
+        <div class="accordion-body">
+          <p>Godziny tyrki obowiązują codziennie w godzinach: <strong>22:00 – 03:00[span_50](start_span)[span_50](end_span)</strong>. Jest to forma dobrowolnej zabawy opartej na żartach i docinkach[span_51](start_span)[span_51](end_span).</p>
+          <p><strong>Udział nie jest obowiązkowy[span_52](start_span)[span_52](end_span).</strong> Każdy członek ma prawo w dowolnym momencie napisać, że nie chce uczestniczyć, a inni mają obowiązek to uszanować[span_53](start_span)[span_53](end_span).</p>
+          <p><strong>Zabronione jest[span_54](start_span)[span_54](end_span):</strong> wyśmiewanie problemów osobistych, atakowanie wyglądu/rodziny w celu zranienia, groźby, zastraszanie oraz kontynuowanie żartów po prośbie o zakończenie[span_55](start_span)[span_55](end_span).</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- VIII. PRYWATNOŚĆ I BEZPIECZEŃSTWO -->
+    <div class="accordion-item glass-card">
+      <button class="accordion-header">
+        <span class="acc-title"><span class="acc-num">VIII.</span> 🔐 PRYWATNOŚĆ I BEZPIECZEŃSTWO</span>
+        <span class="acc-icon">+</span>
+      </button>
+      <div class="accordion-content">
+        <div class="accordion-body">
+          <p>Informacje dotyczące wewnętrznego funkcjonowania grupy pozostają w społeczności[span_56](start_span)[span_56](end_span). <strong>Bez zgody zabrania się wynoszenia poza grupę[span_57](start_span)[span_57](end_span):</strong></p>
+          <ul>
+            <li>screenów rozmów[span_58](start_span)[span_58](end_span),</li>
+            <li>prywatnych wiadomości[span_59](start_span)[span_59](end_span),</li>
+            <li>materiałów grupowych i danych członków[span_60](start_span)[span_60](end_span).</li>
+          </ul>
+          <p>VIA FAMILIA stanowczo potępia przemoc, nękanie, molestowanie, groźby oraz szantaż[span_61](start_span)[span_61](end_span).</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- IX. SZACUNEK I WSPARCIE -->
+    <div class="accordion-item glass-card">
+      <button class="accordion-header">
+        <span class="acc-title"><span class="acc-num">IX.</span> 🫂 SZACUNEK I OCHRONA CZŁONKÓW</span>
+        <span class="acc-icon">+</span>
+      </button>
+      <div class="accordion-content">
+        <div class="accordion-body">
+          <p>W szczególności kategorycznie zabronione jest: wyśmiewanie kryzysów emocjonalnych, wyśmiewanie prób samobójczych lub problemów psychicznych, zachęcanie do samookaleczeń oraz wywieranie presji na osoby w trudnej sytuacji[span_62](start_span)[span_62](end_span).</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- X. DZIAŁ MULTIMEDIA -->
+    <div class="accordion-item glass-card">
+      <button class="accordion-header">
+        <span class="acc-title"><span class="acc-num">X.</span> 🎨 DZIAŁ MULTIMEDIA</span>
+        <span class="acc-icon">+</span>
+      </button>
+      <div class="accordion-content">
+        <div class="accordion-body">
+          <p>Dział odpowiedzialny za oprawę graficzną, edycję wideo, tworzenie postów i relacji oraz rozwój estetyki profilu @via._familia[span_63](start_span)[span_63](end_span).</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- XI. AKTYWNOŚĆ -->
+    <div class="accordion-item glass-card">
+      <button class="accordion-header">
+        <span class="acc-title"><span class="acc-num">XI.</span> ⚡ AKTYWNOŚĆ I ROZWÓJ</span>
+        <span class="acc-icon">+</span>
+      </button>
+      <div class="accordion-content">
+        <div class="accordion-body">
+          <p>Członkowie wspierają grupę poprzez pisanie na czatach, udostępnianie relacji, oznaczanie profilu oraz wspólne projekty[span_64](start_span)[span_64](end_span). Długotrwały brak aktywności bez usprawiedliwienia lub sztuczne nabijanie spamu może skutkować usunięciem[span_65](start_span)[span_65](end_span).</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- XII & XIII. SYSTEM OSTRZEŻEŃ I USUNIĘCIE -->
+    <div class="accordion-item glass-card">
+      <button class="accordion-header">
+        <span class="acc-title"><span class="acc-num">XII - XIII.</span> ⚠️ SYSTEM KONSEKWENCJI & USUNIĘCIE</span>
+        <span class="acc-icon">+</span>
+      </button>
+      <div class="accordion-content">
+        <div class="accordion-body">
+          <p><strong>Hierarchia kar[span_66](start_span)[span_66](end_span):</strong> 1. Upomnienie ➔ 2. Ostrzeżenie ➔ 3. Ograniczenie udziału ➔ 4. Usunięcie z grupy[span_67](start_span)[span_67](end_span).</p>
+          <p>Usunięcie następuje m.in. za: kłamstwo podczas rekrutacji, zatajenie wieku, wynoszenie informacji, brak szacunku, toksyczność lub długotrwałą nieaktywność[span_68](start_span)[span_68](end_span). Ostateczna decyzja należy do liderki[span_69](start_span)[span_69](end_span).</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- SEKCJA: POLITYKA PRYWATNOŚCI -->
+    <div id="polityka" class="accordion-item glass-card privacy-card">
+      <button class="accordion-header">
+        <span class="acc-title"><span class="acc-num">POLITYKA</span> 🛡️ POLITYKA PRYWATNOŚCI & COOKIES</span>
+        <span class="acc-icon">+</span>
+      </button>
+      <div class="accordion-content">
+        <div class="accordion-body">
+          <h4 class="sub-role">1. Administrator Strony i Danych</h4>
+          <p>Administratorem niniejszej strony internetowej oraz danych gromadzonych w procesie rekrutacji jest profil na Instagramie <strong>@csx_werka</strong> (kontakt e-mail: <strong>csxwerka@gmail.com</strong>).</p>
+
+          <h4 class="sub-role">2. Zakres Zbieranych Danych</h4>
+          <p>W formularzu rekrutacyjnym zbierane są wyłącznie dane niezbędne do weryfikacji kandydata do grupy na Instagramie: nazwa profilu Instagram (@twoja_nazwa), wiek oraz treść zgłoszenia motywacyjnego.</p>
+
+          <h4 class="sub-role">3. Bezpieczeństwo i Usługi Zewnętrzne</h4>
+          <p>Dane przesyłane są w sposób bezpieczny i szyfrowany przy użyciu zewnętrznego narzędzia formularzy <strong>Formspree</strong> bezpośrednio do administratora. Dane nie są odsprzedawane ani przekazywane podmiotom trzecim.</p>
+
+          <h4 class="sub-role">4. Pliki Cookies & LocalStorage</h4>
+          <p>Serwis wykorzystuje pamięć lokalną przeglądarki (localStorage) jedynie w celu zapamiętania faktu kliknięcia akceptacji banera informacyjnego o cookies.</p>
+        </div>
+      </div>
+    </div>
+
+  </main>
+
+  <div class="container text-center my-5">
+    <a href="index.html" class="btn-neon btn-large">⬅ Wróć do strony głównej</a>
+  </div>
+
+  <!-- Stopka -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-bottom">
+        &copy; 2026 VIA Familia. Administrator: @csx_werka. Wszelkie prawa zastrzeżone.
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
