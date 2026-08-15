@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>VIA Familia — Oficjalna Społeczność Instagram</title>
+  
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@600;700&family=Orbitron:wght@600;800;900&family=Plus+Jakarta+Sans:wght@400;600;700;800&display=swap" rel="stylesheet">
+  
+  <link rel="stylesheet" href="style.css">
+  
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.9.3/dist/confetti.browser.min.js"></script>
+</head>
+<body>
+
+  <!-- Three.js Canvas -->
+  <canvas id="webgl-canvas"></canvas>
+
+  <!-- Pasek Nawigacji -->
+  <nav class="navbar">
+    <div class="nav-container">
+      <a href="index.html" class="nav-brand">
+        <img src="logo2.png" alt="VIA Familia Logo" class="brand-img-logo">
+        <span class="brand-text">VIA <span class="neon-pink">FAMILIA</span></span>
+      </a>
+
+      <div class="nav-actions">
+        <a href="regulamin.html" class="nav-text-link">Regulamin</a>
+        <a href="mailto:csxwerka@gmail.com" class="nav-icon-link" title="E-mail" aria-label="E-mail">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <rect width="20" height="16" x="2" y="4" rx="2"></rect>
+            <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"></path>
+          </svg>
+        </a>
+        <a href="https://www.instagram.com/via._familia" target="_blank" rel="noopener noreferrer" class="nav-icon-link ig-glow" title="Instagram @via._familia" aria-label="Instagram">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <rect width="20" height="20" x="2" y="2" rx="5" ry="5"></rect>
+            <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+            <line x1="17.5" x2="17.51" y1="6.5" y2="6.5"></line>
+          </svg>
+        </a>
+        <a href="#rekrutacja" class="btn-neon btn-small">Dołącz</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Sekcja Hero (BEZ owalnego loga w środku) -->
+  <header id="hero" class="hero-section">
+    <div class="glow-orb orb-1"></div>
+    <div class="glow-orb orb-2"></div>
+    
+    <div class="hero-content">
+      <!-- Polski napis w pigułce -->
+      <div class="badge-neon">WARTOŚCI • INTEGRACJA • PRZYJAŹŃ</div>
+      
+      <h1 class="hero-title">
+        VIA <span class="gradient-text">FAMILIA</span>
+      </h1>
+      
+      <p class="hero-subtitle">
+        Jeśli chcesz dołączyć do czegoś większego to dołącz do nas 🫵🏻
+      </p>
+      
+      <div class="hero-buttons">
+        <a href="#rekrutacja" class="btn-neon btn-large">Wypełnij Rekrutację 🚀</a>
+        <a href="regulamin.html" class="btn-ghost">Zobacz Regulamin</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- PASEK STATYSTYK / ZALET (Wypełnienie pustej przestrzeni) -->
+  <section class="stats-bar-section">
+    <div class="container">
+      <div class="stats-grid">
+        <div class="stat-pill glass-card">
+          <span class="stat-icon">⚡</span>
+          <div class="stat-info">
+            <strong>24/7</strong>
+            <small>Ciągła Aktywność</small>
+          </div>
+        </div>
+
+        <div class="stat-pill glass-card">
+          <span class="stat-icon">🔒</span>
+          <div class="stat-info">
+            <strong>100%</strong>
+            <small>Lojalność i Zaufanie</small>
+          </div>
+        </div>
+
+        <div class="stat-pill glass-card">
+          <span class="stat-icon">📍</span>
+          <div class="stat-info">
+            <strong>Cała Polska</strong>
+            <small>Różne Miasta</small>
+          </div>
+        </div>
+
+        <div class="stat-pill glass-card">
+          <span class="stat-icon">🚫</span>
+          <div class="stat-info">
+            <strong>0% Dram</strong>
+            <small>Czysty Klimat</small>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Sekcja Kafelków z animacją rozwijania kaskadowego -->
+  <section id="features" class="features-section">
+    <div class="container">
+      <h2 class="section-title">Dlaczego <span class="gradient-text">VIA Familia?</span></h2>
+      
+      <div class="cards-grid">
+        <div class="glass-card feature-card anim-card" style="--card-delay: 1;">
+          <div class="card-icon">⚡</div>
+          <h3>Aktywna Społeczność</h3>
+          <p>Mamy bardzo aktywną społeczność. Piszemy bez przerwy, rozmawiamy na każdy temat i wspólnie spędzamy czas w świetnym gronie.</p>
+        </div>
+
+        <div class="glass-card feature-card anim-card" style="--card-delay: 2;">
+          <div class="card-icon">📍</div>
+          <h3>Ludzie z Różnych Miast</h3>
+          <p>Na grupie VIA Familia mamy ludzi z różnych miast w całej Polsce. Poznaj osoby ze swojej okolicy i nawiąż trwałe przyjaźnie!</p>
+        </div>
+
+        <div class="glass-card feature-card anim-card" style="--card-delay: 3;">
+          <div class="card-icon">👑</div>
+          <h3>Czysty Vibe & Zasady</h3>
+          <p>Wzajemny szacunek, lojalność i bezpieczeństwo. Tworzymy przestrzeń, w której każdy może czuć się w 100% sobą.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Sekcja Rekrutacji -->
+  <section id="rekrutacja" class="form-section">
+    <div class="container">
+      <div class="form-wrapper glass-card">
+        
+        <div class="stepper-header">
+          <div class="stepper-title">Formularz Rekrutacyjny</div>
+          <div class="step-indicators">
+            <div class="step-indicator active" data-step="1">1</div>
+            <div class="step-line"></div>
+            <div class="step-indicator" data-step="2">2</div>
+            <div class="step-line"></div>
+            <div class="step-indicator" data-step="3">3</div>
+            <div class="step-line"></div>
+            <div class="step-indicator" data-step="4">4</div>
+          </div>
+        </div>
+
+        <form id="recruitmentForm" novalidate>
+
+          <!-- KROK 1 / 4 -->
+          <div class="form-step active" id="step-1">
+            <div class="step-counter">Krok 1 / 4 • Informacje o Tobie</div>
+            
+            <div class="input-group">
+              <label for="igHandle">Podaj nazwę na instagramie (@twoja_nazwa) <span class="req">*</span></label>
+              <div class="input-container">
+                <span class="prefix">@</span>
+                <input type="text" id="igHandle" name="instagram_handle" placeholder="twoja_nazwa" required autocomplete="off">
+              </div>
+              <span class="error-msg" id="err-ig">Podanie nazwy na Instagramie jest obowiązkowe!</span>
+            </div>
+
+            <div class="input-group">
+              <label for="age">Ile masz lat? <span class="req">*</span></label>
+              <input type="number" id="age" name="age" placeholder="Wpisz tylko liczbę (min. 15 lat)" min="15" max="99" required>
+              <span class="error-msg" id="err-age">Minimalny wiek dołączenia do VIA Familia to 15 lat!</span>
+            </div>
+
+            <div class="form-btn-row right">
+              <button type="button" class="btn-neon btn-next" onclick="nextStep(1)">Dalej ➔</button>
+            </div>
+          </div>
+
+          <!-- KROK 2 / 4 -->
+          <div class="form-step" id="step-2">
+            <div class="step-counter">Krok 2 / 4 • Twoja Motywacja</div>
+
+            <div class="input-group">
+              <label for="reason">Napisz krótko dlaczego chcesz dołączyć do VIA Familia <span class="req">*</span></label>
+              <textarea id="reason" name="reason" rows="5" placeholder="Napisz kilka zdań o sobie, czym się interesujesz i dlaczego chcesz pisać właśnie z nami..." required></textarea>
+              <span class="error-msg" id="err-reason">Napisz krótką odpowiedź, aby przejść dalej!</span>
+            </div>
+
+            <div class="form-btn-row">
+              <button type="button" class="btn-ghost" onclick="prevStep(2)">⬅ Wróć</button>
+              <button type="button" class="btn-neon btn-next" onclick="nextStep(2)">Dalej ➔</button>
+            </div>
+          </div>
+
+          <!-- KROK 3 / 4 -->
+          <div class="form-step" id="step-3">
+            <div class="step-counter">Krok 3 / 4 • Regulamin & Zgody</div>
+
+            <div class="rules-box">
+              <div class="rules-box-header">
+                <h3>Kluczowe Zasady VIA Familia</h3>
+                <a href="regulamin.html" target="_blank" class="pdf-link-btn">📖 Pełny Regulamin</a>
+              </div>
+              <ul>
+                <li><strong>1. Wiek:</strong> Wymagane ukończone 15 lat. Zatajenie wieku grozi usunięciem[span_0](start_span)[span_0](end_span).</li>
+                <li><strong>2. Aktywność:</strong> Piszemy na bieżąco, wspieramy grupę i bierzemy udział w dyskusjach[span_1](start_span)[span_1](end_span).</li>
+                <li><strong>3. Szacunek:</strong> Całkowity zakaz hejtu, toksyczności, wyzwisk i kwasów[span_2](start_span)[span_2](end_span).</li>
+                <li><strong>4. Oznaczenia:</strong> Po dołączeniu wymagane dodanie „VIA” do nazwy/bio oraz obserwacja @via._familia[span_3](start_span)[span_3](end_span).</li>
+              </ul>
+            </div>
+
+            <div class="checkbox-group">
+              <label class="custom-checkbox">
+                <input type="checkbox" id="rulesAccept" name="rules_accepted" required>
+                <span class="checkmark"></span>
+                <span class="label-text">Zapoznałem(-am) się z <a href="regulamin.html" target="_blank" class="inline-link">Oficjalnym Regulaminem</a> oraz <a href="regulamin.html#polityka" target="_blank" class="inline-link">Polityką Prywatności</a> i w pełni je akceptuję. <span class="req">*</span></span>
+              </label>
+              <span class="error-msg" id="err-rules">Akceptacja regulaminu jest obowiązkowa!</span>
+            </div>
+
+            <div class="form-btn-row">
+              <button type="button" class="btn-ghost" onclick="prevStep(3)">⬅ Wróć</button>
+              <button type="button" class="btn-neon btn-submit" id="submitBtn" onclick="submitApplication()">Wyślij Zgłoszenie 🚀</button>
+            </div>
+          </div>
+
+          <!-- KROK 4 / 4 -->
+          <div class="form-step" id="step-4">
+            <div class="success-screen">
+              <div class="success-icon">✨</div>
+              <h3 class="success-title gradient-text">Wiadomość wysłana!</h3>
+              <p class="success-desc">
+                Odpowiemy jak najszybciej możemy.
+              </p>
+              <a href="#hero" class="btn-neon" onclick="resetFormState()">Wróć na stronę</a>
+            </div>
+          </div>
+
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- Stopka -->
+  <footer class="footer">
+    <div class="container">
+      
+      <div class="footer-top-grid">
+        <div class="footer-brand">
+          <div class="footer-logo-row">
+            <img src="logo2.png" alt="VIA Familia Logo" class="footer-brand-img">
+            <span class="footer-title">VIA <span class="neon-pink">FAMILIA</span></span>
+          </div>
+          <p class="footer-tagline">Społeczność z klimatem na Instagramie.</p>
+        </div>
+
+        <div class="footer-links-col">
+          <h4>Dokumenty</h4>
+          <ul class="legal-links">
+            <li><a href="regulamin.html">Regulamin Społeczności</a></li>
+            <li><a href="regulamin.html#polityka">Polityka Prywatności</a></li>
+            <li><a href="https://www.instagram.com/csx_werka" target="_blank" rel="noopener noreferrer">Administrator: @csx_werka</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-contact-col">
+          <h4>Kontakt z Grupą</h4>
+          <div class="contact-item">
+            <span class="contact-label">E-mail:</span>
+            <a href="mailto:csxwerka@gmail.com" class="neon-link">csxwerka@gmail.com</a>
+          </div>
+          <div class="contact-item">
+            <span class="contact-label">Instagram:</span>
+            <a href="https://www.instagram.com/via._familia" target="_blank" rel="noopener noreferrer" class="ig-footer-badge">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <rect width="20" height="20" x="2" y="2" rx="5" ry="5"></rect>
+                <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                <line x1="17.5" x2="17.51" y1="6.5" y2="6.5"></line>
+              </svg>
+              <span>@via._familia</span>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Stopka Autorska -->
+      <div class="dev-banner glass-card">
+        <div class="dev-banner-text">
+          <span>Jeśli potrzebujesz strony internetowej odezwij się</span>
+          <a href="https://www.instagram.com/m_m_xx09" target="_blank" rel="noopener noreferrer" class="dev-ig-link">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <rect width="20" height="20" x="2" y="2" rx="5" ry="5"></rect>
+              <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+              <line x1="17.5" x2="17.51" y1="6.5" y2="6.5"></line>
+            </svg>
+            <span>@m_m_xx09</span>
+          </a>
+        </div>
+        <div class="dev-signature">
+          By Maciej Matuszewski
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        &copy; 2026 VIA Familia. Wszelkie prawa zastrzeżone.
+      </div>
+    </div>
+  </footer>
+
+  <!-- BANER COOKIES -->
+  <div id="cookieBanner" class="cookie-banner glass-card">
+    <div class="cookie-content">
+      <div class="cookie-icon">🍪</div>
+      <div class="cookie-text">
+        Ta strona wykorzystuje pliki cookies w celu prawidłowego działania formularza. Korzystając z serwisu, akceptujesz nasz 
+        <a href="regulamin.html" class="inline-link">Regulamin</a> oraz 
+        <a href="regulamin.html#polityka" class="inline-link">Politykę Prywatności</a>.
+      </div>
+    </div>
+    <div class="cookie-actions">
+      <button class="btn-neon btn-small" onclick="acceptCookies()">Akceptuję</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
